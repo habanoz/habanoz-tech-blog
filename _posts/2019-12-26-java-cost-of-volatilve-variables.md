@@ -48,23 +48,23 @@ Average duration values are shown in y-axis. All values are in milliseconds.
 
 Please note that 500 test results are used for each variable and in each test a single thread made 1 million read or write operations. Results should be interpreted by considering thread counts and variable counts.{: .notice--warning}
 
-###1. No writer, single reader
+### No writer, single reader
 
 ![No writer, single reader](https://1.bp.blogspot.com/-omjyDWEiNr4/XgR-Q3_Fu2I/AAAAAAAAD4k/5dARONSz6cs1g-qVHocycCADUj_BJ8xqwCLcBGAsYHQ/s1600/single_reader.png)
 
-###2. No writer, 2 readers
+### No writer, 2 readers
 
 ![No writer, 2 readers](https://1.bp.blogspot.com/-WJuQ53IQHTk/XgR-vJ6tfqI/AAAAAAAAD4s/vuFlmYJDLHow6jCMfGdFoXIGrsD7uUzUACLcBGAsYHQ/s1600/2reader.png)
 
-###3. 1 Writer, 1 Readers
+### 1 Writer, 1 Readers
 
 ![1 Writer, 1 Readers](https://1.bp.blogspot.com/-TuOFKDMVtuU/XgSLO5MHnxI/AAAAAAAAD5Y/H-8uwuLMnbEEJYdyK63dK7xTZdweb8W9wCLcBGAsYHQ/s1600/1reader1writer.png)
 
-###4. 1 Writer, 2 Readers
+### 1 Writer, 2 Readers
 
 ![1 Writer, 2 Readers](https://1.bp.blogspot.com/-g9yEHpFfmPw/XgR_b1R4wTI/AAAAAAAAD44/X5WKzoyCWJATeJ_AcC9_3YkPmjkKkYqSQCLcBGAsYHQ/s640/2reader1writer.png)
 
-###5. 1 Reader, 2 Variables
+### 1 Reader, 2 Variables
 
 ![1 Reader, 2 Variables](https://1.bp.blogspot.com/-FpRk3wFkbYI/XgR_lvBoxYI/AAAAAAAAD48/62dYspqlahg3mYW7IrF2RwjXV8rjsXQQgCLcBGAsYHQ/s1600/single_reader_2_reads.png)
 
