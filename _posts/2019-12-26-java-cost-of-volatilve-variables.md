@@ -10,21 +10,21 @@ tags:
   - locks
 ---
 
-### Introduction
+## Introduction
 
 Use of volatile variables is common among Java developers as a way of implicit synchronization. JIT compilers may reorder program execution to increase performance. Java memory model[1] constraints reordering of volatile variables. Thus volatile variable access should has a cost which is different than a non-volatile variable access.
 
 This article will not discuss technical details on use of volatile variables. Performance impact of volatile variables is explored by using a test application.
 
-### Objective
+## Objective
 
 Exploring volatile variable costs and comparing with alternative approaches.
 
-### Audience
+## Audience
 
 This article is written for developers who seek to have a view about cost of volatile variables.
 
-### Test Configuration
+## Test Configuration
 
 Test application runs read and write actions on java variables. A non volatile primitive integer, a volatile primitive integer and an AtomicInteger is tested. Non-volatile primitive integer access is controlled with ReentrantLock and ReentrantReadWriteLock  to compare with explicit locking schemes.
 
@@ -42,32 +42,34 @@ During test JIT compiler my compile some code sections. Later executions may ben
 
 At the and for each variable type 500 test results are generated.
 
-### Results
+## Results
 
-Average duration values are shown in y-axis. All values are in milliseconds. Please note that 500 test results are used for each variable and in each test a single thread made 1 million read or write operations. Results should be interpreted by considering thread counts and variable counts.
+Average duration values are shown in y-axis. All values are in milliseconds. 
 
-####1. No writer, single reader
+Please note that 500 test results are used for each variable and in each test a single thread made 1 million read or write operations. Results should be interpreted by considering thread counts and variable counts.{: .notice--warning}
+
+###1. No writer, single reader
 
 ![No writer, single reader](https://1.bp.blogspot.com/-omjyDWEiNr4/XgR-Q3_Fu2I/AAAAAAAAD4k/5dARONSz6cs1g-qVHocycCADUj_BJ8xqwCLcBGAsYHQ/s1600/single_reader.png)
 
-####2. No writer, 2 readers
+###2. No writer, 2 readers
 
 ![No writer, 2 readers](https://1.bp.blogspot.com/-WJuQ53IQHTk/XgR-vJ6tfqI/AAAAAAAAD4s/vuFlmYJDLHow6jCMfGdFoXIGrsD7uUzUACLcBGAsYHQ/s1600/2reader.png)
 
-####3. 1 Writer, 1 Readers
+###3. 1 Writer, 1 Readers
 
 ![1 Writer, 1 Readers](https://1.bp.blogspot.com/-TuOFKDMVtuU/XgSLO5MHnxI/AAAAAAAAD5Y/H-8uwuLMnbEEJYdyK63dK7xTZdweb8W9wCLcBGAsYHQ/s1600/1reader1writer.png)
 
-####4. 1 Writer, 2 Readers
+###4. 1 Writer, 2 Readers
 
 ![1 Writer, 2 Readers](https://1.bp.blogspot.com/-g9yEHpFfmPw/XgR_b1R4wTI/AAAAAAAAD44/X5WKzoyCWJATeJ_AcC9_3YkPmjkKkYqSQCLcBGAsYHQ/s640/2reader1writer.png)
 
-####5. 1 Reader, 2 Variables
+###5. 1 Reader, 2 Variables
 
 ![1 Reader, 2 Variables](https://1.bp.blogspot.com/-FpRk3wFkbYI/XgR_lvBoxYI/AAAAAAAAD48/62dYspqlahg3mYW7IrF2RwjXV8rjsXQQgCLcBGAsYHQ/s1600/single_reader_2_reads.png)
 
 
-### Interpreting Results
+## Interpreting Results
 
 Test 1 uses 1 thread to make read operations. No concurrent write is done. Access to volatile and non volatile variables have similar costs. Using locks to constraint access is very costly.
 
@@ -85,13 +87,13 @@ Test 4 adds one more reader to Test 3. Since there are two readers, divide resul
 
 Test 5 is the same setup with Test 1. Only difference is instead of 1 variable, 2 variables are used. This test aims to see if using two memory barrier is more costly than using single memory barrier through use of Locks. According to results, using locks is still more costly.
 
-### Conclusion
+## Conclusion
 
 Volatile variables and Atomic variables are cheap ways of implicit synchronization.
 
 Use of locks should be avoided when possible.
 
-### References
+## References
 
 1. [Java Memory Model](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)
 2. [Test Application Source Code](https://github.com/habanoz/java-volatile-test)
