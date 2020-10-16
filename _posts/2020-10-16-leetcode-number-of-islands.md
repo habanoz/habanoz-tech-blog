@@ -99,8 +99,8 @@ class Solution {
 
 ## Complexity Analysis
 
-Search grid is m x n. All elements of the grid is visited. Growth is controlled by search space dimensions. At each element 4 neighbours are visited.
-Visited elements are marked and not traversed again. In summary, each element is visited in main loop once and a 4 more times when neighbours are traversed.
+Search grid is m x n. All elements of the grid is visited sequentially. Growth is controlled by the search space dimensions. At each position 4 neighbours are visited.
+Visited elements are marked and not traversed again. In summary, each element is visited once in the  main loop once and 4 more times when neighbours are traversed.
 ```
 Time Complexity: O(mxn)+O(4xmxn) = O(mxn)
 ```
