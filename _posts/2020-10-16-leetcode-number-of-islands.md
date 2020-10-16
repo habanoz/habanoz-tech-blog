@@ -104,13 +104,6 @@ Visited elements are marked and not traversed again. In summary, each element is
 ```
 Time Complexity: O(mxn)+O(4xmxn) = O(mxn)
 ```
-\begin{align}
-    \nabla \cdot  \vec{E} &= \rho \nonumber \\
-    \nabla \cdot  \vec{B} &= 0    \nonumber \\
-    \nabla \times \vec{E} &= - \frac{\partial \vec{B}}{\partial t} \label{eq:maxwell} \\
-    \nabla \times \vec{B} &= \vec{j} + \frac{\partial \vec{E}}{\partial t} \nonumber \,.
-\end{align}
-
 
 
 
