@@ -1,5 +1,5 @@
 ---
-title: "Leetcode: Knight Probability in Chessboard"
+title: "Leetcode: Knight Probability in Chessboard: Iterative Solution"
 categories:
   - Java
   - leetcode
@@ -8,6 +8,7 @@ categories:
 
 tags:
   - dynamic programming
+  - iterative solution
 ---
 
 ## Problem Description
@@ -36,10 +37,6 @@ From each of those positions, there are also two moves that will keep the knight
 The total probability the knight stays on the board is 0.0625.
 ```
 
-## Solution
-There are two possible ways to solve.
-- [Iterative Solution]({% post_url 2020-10-22-leetcode-knight-probability-in-chessboard-iterative %})
-- [Recursive Solution]({% post_url 2020-10-22-leetcode-knight-probability-in-chessboard-recursive %})
 
 
 
