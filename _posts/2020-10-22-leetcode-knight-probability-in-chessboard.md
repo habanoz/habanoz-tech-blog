@@ -39,7 +39,7 @@ The total probability the knight stays on the board is 0.0625.
 ## Solution
 There are two possible ways to solve.
 - [Iterative Solution]({% post_url habanoz-tech-blog/2020-10-22-leetcode-knight-probability-in-chessboard-iterative %})
-- [Recursive Solution]({% post_url habanoz-tech-blog/2020-10-22-leetcode-knight-probability-in-chessboard-recursive %})
+- [Recursive Solution]({% post_url habanoz-tech-blog/2020-10-22-leetco2de-knight-probability-in-chessboard-recursive %})
 
 
 
