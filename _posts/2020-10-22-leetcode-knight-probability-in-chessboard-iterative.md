@@ -17,9 +17,7 @@ At each position a knight may go to 8 new positions. Probability of moving to a 
 
 The knight starts at row r and column c in a board of NxN. K shows total moves, k shows kth move. Probability of being on board at kth move is given by function f.
 
-f(r,c,k) = f()    
-
-![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+![formula](https://render.githubusercontent.com/render/math?math=\LARGE&space;f(r,c,k)=&space;\sum_{(r_{prev},&space;c_{prev})\epsilon&space;S}&space;f(r_{prev},&space;c_{prev},&space;k-1)&space;/&space;8)
 
 
 
