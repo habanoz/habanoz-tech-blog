@@ -24,7 +24,7 @@ Problem definition is taken from leetcode.
 
 >The knight continues moving until it has made exactly K moves or has moved off the chessboard. Return the probability that the knight remains on the board after it has stopped moving.
 
-{: style="text-align:center"}![knight on board](https://assets.leetcode.com/uploads/2018/10/12/knight.png)
+![knight on board](https://assets.leetcode.com/uploads/2018/10/12/knight.png){:class="img-center"}
 
 #### Example 1:
 
