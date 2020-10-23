@@ -13,7 +13,7 @@ tags:
 
 ## Problem Description
 
-Problem description is given in [problem description]({{ site.baseurl }}{% post_url 2020-10-22-leetcode-knight-probability-in-chessboard %}).
+Problem description is given in [Leetcode: Knight Probability in Chessboard]({{ site.baseurl }}{% post_url 2020-10-22-leetcode-knight-probability-in-chessboard %}).
 
 ## Iterative Solution
 
