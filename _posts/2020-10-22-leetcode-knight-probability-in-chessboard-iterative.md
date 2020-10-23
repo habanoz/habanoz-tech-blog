@@ -11,31 +11,15 @@ tags:
   - iterative solution
 ---
 
-## Problem Description
+## Iterative Solution
 
-Problem definition is taken from leetcode. 
-- [Knight Probability in Chessboard](https://leetcode.com/problems/knight-probability-in-chessboard/ "Go to leetcode"){:target="_blank" rel="noopener"}
+At each position a knight may go to 8 new positions. Probability of moving to a new position is probability of being at current position divided by 8. Thus we can iteratively calculate probabilities for each move. After last move, we can take sum of all probabilities which gives total probability of staying on board.  
 
+The knight starts at row r and column c in a board of NxN. K shows total moves, k shows kth move. Probability of being on board at kth move is given by function f.
 
->On an NxN chessboard, a knight starts at the r-th row and c-th column and attempts to make exactly K moves. The rows and columns are 0 indexed, so the top-left square is (0, 0), and the bottom-right square is (N-1, N-1).
+f(r,c,k) = f()    
 
->A chess knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
-
->Each time the knight is to move, it chooses one of eight possible moves uniformly at random (even if the piece would go off the chessboard) and moves there.
-
->The knight continues moving until it has made exactly K moves or has moved off the chessboard. Return the probability that the knight remains on the board after it has stopped moving.
-
-![knight on board](https://assets.leetcode.com/uploads/2018/10/12/knight.png)
-
-#### Example 1:
-
-```
-Input: 3, 2, 0, 0
-Output: 0.0625
-Explanation: There are two moves (to (1,2), (2,1)) that will keep the knight on the board.
-From each of those positions, there are also two moves that will keep the knight on the board.
-The total probability the knight stays on the board is 0.0625.
-```
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
 
 
