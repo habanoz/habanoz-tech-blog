@@ -27,7 +27,7 @@ f(r,c,k)= \sum_{(r_{next}, c_{next})\epsilon S} f(r_{next}, c_{next}, k+1) / 8
 
 At the beginning k=0. S contains 8 next possible positions where the knight can move from current position.
 
-At the end where k=K;
+At the end where k=K and (c,r) is inside the board;
 
 ![\begin{align*}
 f(r,c,K)= 1
