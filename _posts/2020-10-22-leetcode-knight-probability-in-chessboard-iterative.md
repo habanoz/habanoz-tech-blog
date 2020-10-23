@@ -11,6 +11,10 @@ tags:
   - iterative solution
 ---
 
+## Problem Description
+
+Problem description is given in [problem description]({{ site.baseurl }}{% post_url 2020-10-22-leetcode-knight-probability-in-chessboard %}).
+
 ## Iterative Solution
 
 At each position a knight may go to 8 new positions. Probability of moving to a new position is probability of being at current position divided by 8. Thus we can iteratively calculate probabilities for each move. After last move, we can take sum of all probabilities which gives total probability of staying on board.  
