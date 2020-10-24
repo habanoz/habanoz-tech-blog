@@ -7,7 +7,8 @@ categories:
   - algorithms
 
 tags:
-  - dynamic programming
+  - recursion
+  - memoization
   - depth-first-search
   - DFS
 ---
@@ -17,6 +18,7 @@ tags:
 Problem definition is taken from leetcode. 
 - [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/ "Go to leetcode"){:target="_blank" rel="noopener"}
 
+Dynamic programming solution is given at [Dynamic Programming Solution]({{ site.baseurl }}{% post_url 2020-10-23-leetcode-out-of-boundary-paths-dp %})
 
 ## Solution
 Brute force recursive approach involves traversing all search space until all moves are completed and counting number of times ball is out off the board. A memo arrays of size Nxmxn is used to memorize already visited cell so that it is not calculated again. 
@@ -84,4 +86,4 @@ class Solution {
 ## Complexity
 
 Memo array is Nxmxn thus space complexity is O(Nmn). 
-Time complexity is O(Nxmxn) due to size of the memo array. ???
+Time complexity is O(Nxmxn) due to size of the memo array. Even though the memo array is not explicitly initialized, it is implicitly initialized with zeros.
