@@ -1,5 +1,5 @@
 ---
-title: "Leetcode: Out of Boundary Paths"
+title: "Leetcode: Out of Boundary Paths: Solution with Dynamic Programming"
 categories:
   - Java
   - leetcode

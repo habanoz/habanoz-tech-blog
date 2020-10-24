@@ -1,5 +1,5 @@
 ---
-title: "Leetcode: Out of Boundary Paths"
+title: "Leetcode: Out of Boundary Paths: Recursive Solution"
 categories:
   - Java
   - leetcode
