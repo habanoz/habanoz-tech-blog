@@ -1,5 +1,5 @@
 ---
-title: "Leetcode: Out of Boundary Paths: Solution with Dynamic Programming"
+title: "Leetcode: Out of Boundary Paths: Dynamic Programming Solution"
 categories:
   - Java
   - leetcode
@@ -16,6 +16,8 @@ tags:
 
 Problem definition is taken from leetcode. 
 - [Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/ "Go to leetcode"){:target="_blank" rel="noopener"}
+
+> There is an m by n grid with a ball. Given the start coordinate (i,j) of the ball, you can move the ball to adjacent cell or cross the grid boundary in four directions (up, down, left, right). However, you can at most move N times. Find out the number of paths to move the ball out of grid boundary. The answer may be very large, return it after mod 109 + 7.
 
 Recursive solution is given at [Recursive Solution]({{ site.baseurl }}{% post_url 2020-10-23-leetcode-out-of-boundary-paths-recursive %})
 
