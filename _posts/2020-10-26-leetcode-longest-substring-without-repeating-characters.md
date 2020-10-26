@@ -35,7 +35,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 ```
 
 ## Solution
-A sliding window [i,j] is used to keep substrings which having unique chars. A char array ca is used to store the index value (ci) where a char is found.
+A sliding window [i,j] is used to keep a substring having unique chars. A char array (ca) is used to store the index value (ci) where a char (c) is found.
 At each iteration j is incremented. If the next char in the string is already present withing the sliding window at index ci, start index (i) is set to ci+1.
 
 ## Implementation
