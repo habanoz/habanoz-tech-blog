@@ -46,8 +46,6 @@ class Solution {
         final int n = s.length();
         
         if(n==0)return false;
-        
-        //System.out.println(s);
             
         int pos=0;
         int end = s.length()-1;
