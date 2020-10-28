@@ -71,7 +71,7 @@ class Solution {
 ## Expand Around Center Solution
 
 A center is selected at each iteration. Substring is expanded around the center and for each substring a palindrome check is made.
-Space complexity is again O(1). Time complexity analysis involves two loops. Outer loop moves the center 2N-1 times. In the inner loop substring is expanded and palindrome check is made which may involve N/2 O(1) operations. Time complexity is O(N^2).   
+Space complexity is again O(1). Time complexity analysis involves two loops. Outer loop moves the center 2N-1 times.There can be 2N-1 centers: N centers (odd length palindromes) for each char positions and N-1 centers (even length palindromes) between two char positions. In the inner loop substring is expanded and palindrome check is made which may involve N/2 O(1) operations. Time complexity is O(N^2).   
 
 ```java
 class Solution {
