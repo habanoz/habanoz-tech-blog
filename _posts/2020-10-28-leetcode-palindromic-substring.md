@@ -34,8 +34,8 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 ## Naive Solution
 
-Starting from first index, find all sub-sequences and do a palindrome check. 
-No additional space is used thus space complexity is O(1). Time complexity is worse. For each starting char, there a N of them, all remaining chars (N-m) are used to form sub-sequences. A palindrome check may have (N-m)/ comparisons. Which yields O(N^3) time complexity.    
+Starting from first index, find all substrings and do a palindrome check. 
+No additional space is used thus space complexity is O(1). Time complexity is worse. For each starting char, there a N of them, all remaining chars (N-m) are used to form substrings. A palindrome check may have (N-m)/ comparisons. Which yields O(N^3) time complexity.    
 
 ```java
 class Solution {
@@ -70,8 +70,8 @@ class Solution {
 
 ## Expand Around Center Solution
 
-A center is selected at each iteration. Subsequence is expanded around the center and for each substring a palindrome check is made.
-Space complexity is again O(1). Time complexity analysis involves two loops. Outer loop moves the center 2N-1 times. In the inner loop sub-sequence is expanded and palindrome check is made which may involve N/2 O(1) operations. Time complexity is O(N^2).   
+A center is selected at each iteration. Substring is expanded around the center and for each substring a palindrome check is made.
+Space complexity is again O(1). Time complexity analysis involves two loops. Outer loop moves the center 2N-1 times. In the inner loop substring is expanded and palindrome check is made which may involve N/2 O(1) operations. Time complexity is O(N^2).   
 
 ```java
 class Solution {
