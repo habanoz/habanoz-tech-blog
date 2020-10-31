@@ -14,7 +14,7 @@ tags:
 ## Problem Description
 
 Problem definition is taken from leetcode. 
-- [Longest Common Prefix](https://leetcode.com/problems/roman-to-integer/ "Go to leetcode"){:target="_blank" rel="noopener"}
+- [Roman to Integer](https://leetcode.com/problems/roman-to-integer/ "Go to leetcode"){:target="_blank" rel="noopener"}
 
 > Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M. Given a roman numeral, convert it to an integer.
 
