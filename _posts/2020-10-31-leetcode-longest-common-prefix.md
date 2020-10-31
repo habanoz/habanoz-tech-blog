@@ -32,7 +32,7 @@ Explanation: There is no common prefix among the input strings.
 
 ## Iterative Prefix Search
 
-Choose first string as base. Starting from first position, if all strings has the same chars, position is incremented. No additional space is used. Space complexity is O(1). n being number of strings, m being length of base string, time compexity is O(mn).
+Choose first string as base. Starting from first position, if all strings has the same chars, position is incremented. No additional space is used. Space complexity is O(1). n being number of strings, m being length of the shortest string in the array, time complexity is O(mn).
 
 ```java
 class Solution {
@@ -41,10 +41,9 @@ class Solution {
         if(n==0)return "";
         if(n==1)return strs[0];
         
-        int pos = 0;
         String base=strs[0];
         
-        while (pos<base.length()){
+        for (int pos=0;pos<base.length();pos++){
             char c = base.charAt(pos);
             
             for(int i=1;i<n;i++){
@@ -52,10 +51,9 @@ class Solution {
                     return base.substring(0, pos);
             }
             
-            pos++;
         } 
         
-        return base.substring(0, pos);
+        return base;
 
     }
 }
