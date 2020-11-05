@@ -32,9 +32,9 @@ Output: ["()"]
 
 ## Solution
 
-Recursive backtracking method takes 3 inputs: current combination, left brackets available and right brackets available. 
+Recursive backtracking method takes 3 inputs: current combination, left parentheses available and right parentheses available. 
 
-Within bt method, if no left bracket is left, use all right brackets and return. Otherwise use a left bracket. If there are more right brackets available than left brackets use one right bracket.   
+Within bt method, if no left parentheses is left, use all right parentheses and return. Otherwise use a left parentheses. If there are more right parentheses available than left parentheses use one right parentheses.   
 
 Complexity analysis is omitted. 
  
