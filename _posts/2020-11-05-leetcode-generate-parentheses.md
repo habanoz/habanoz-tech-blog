@@ -30,7 +30,7 @@ Input: n = 1
 Output: ["()"]
 ```
 
-## Solution
+## Backtracking Solution
 
 Recursive backtracking method takes 3 inputs: current combination, left parentheses available and right parentheses available. 
 
@@ -56,6 +56,44 @@ class Solution {
             if(open < close)
                 bt(comb+')', open, close-1 );
         }
+    }
+}
+```
+
+
+## Backtracking Solution 2
+
+f(n) generates combinations for every i which is less than n:  
+f(n) = (f(i))+f(n-i-1)
+
+Some expansion examples:
+
+f(0) = ""
+f(1) = "()"
+f(2) = [ (f(0))+f(1) ], [ (f(1))+f(0) ] = ["()()", "(())"]
+f(3) = [ (f(0))+f(2) ], [ (f(1))+f(1) ], [ (f(2))+f(0) ] = ["()()()","()(())"], ["(())()"], ["(()())","((()))"]
+
+
+
+```java
+class Solution {
+    private final static List<String> empty= List.of("");
+    private final static List<String> one= List.of("()");
+    
+    public List<String> generateParenthesis(int n) {
+        
+        if(n==0) return empty;
+        if(n==1) return one;
+        
+        List<String> result = new LinkedList<>();
+        
+        for (int i=0; i<n; i++){
+            for (String left : generateParenthesis(i))
+                for (String right : generateParenthesis(n-i-1))
+                    result.add("("+left+")"+right);
+        }
+        
+        return result;
     }
 }
 ```
