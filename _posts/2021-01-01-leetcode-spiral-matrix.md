@@ -1,5 +1,5 @@
 ---
-title: "Leetcode: Maximum Subarray"
+title: "Leetcode: Spiral Matrix"
 categories:
   - Python
   - leetcode
