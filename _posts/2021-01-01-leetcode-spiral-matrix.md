@@ -44,6 +44,8 @@ There are two kinds of corners: actual and visited.
 - Actual corners are invalid matrix indices. For example i or j indices cannot be less than zero.
 - Visited corners are matrix elements that are already visited. The solution requires the visited matrix elements are marked with value None.  
 
+First column index is incremented. Then on the first corner, row index is incremented. Then on the first corner column index is decremented. Then on the first corner, row index is decremented. Then on the first corner, column index is incremented again.
+
 Space complexity is O(1): No extra space is used.
 Time complexity is O(ij): i is the number of rows, j is the number of columns.
 
