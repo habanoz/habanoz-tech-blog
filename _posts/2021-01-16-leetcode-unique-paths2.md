@@ -56,16 +56,24 @@ Time complexity is O(mxn).
 
 ```python
 class Solution:
-    def uniquePaths(self, m: int, n: int) -> int:
-        grid = [[0 for j in range(n)] for i in range(m)]
-        grid[m-1][n-1]=1
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        grid = obstacleGrid
+        m = len(obstacleGrid)
+        n = len(obstacleGrid[0])
+        
+        if grid[m-1][n-1]==1 or grid[0][0]==1:
+            return 0
+        
+        grid[m-1][n-1]=2
         for i in range(m-1, -1, -1):
             for j in range(n-1, -1, -1):
                 self.step(grid, i, j)
-        return grid[0][0]
+        return int(grid[0][0]/2)
     
     def step(self, grid, i,j):
         count = grid[i][j]
+        if count%2==1:
+            return 
         
         if j>0:
             grid[i][j-1]+=count
