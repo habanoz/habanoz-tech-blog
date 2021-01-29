@@ -26,3 +26,5 @@ X
 (_posts/2021-01-18-leetcode-add-binary.md,e\8\e8bae37a1863e05f688d7d97352112c706606fff
 ]
 -_posts/2021-01-25-leetcode-climbing-stairs.md,3\f\3fb195d6de2da87121082001c464757b673925a5
+[
++_posts/2021-01-25-leetcode-simplify-path.md,b\f\bfba67b9d2cb3ef0917dd9f605b3074ab9acc9c8
