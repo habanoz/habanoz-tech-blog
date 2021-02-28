@@ -28,3 +28,11 @@ X
 -_posts/2021-01-25-leetcode-climbing-stairs.md,3\f\3fb195d6de2da87121082001c464757b673925a5
 [
 +_posts/2021-01-25-leetcode-simplify-path.md,b\f\bfba67b9d2cb3ef0917dd9f605b3074ab9acc9c8
+[
++_posts/2021-01-16-leetcode-unique-paths2.md,4\b\4bdee1fa10643b9faaef56c938111fd7dc1f437c
+_
+/_posts/2021-01-29-leetcode-set-matrix-zeroes.md,3\7\37ee348876159ba49c17be5161d9bd46c95d11c9
+`
+0_posts/2021-01-31-leetcode-search-a-2d-matrix.md,b\5\b5eba693a145d8d3792c87fad8556e114319aa11
+b
+2_posts/2021-02-03-leetcode-search-a-2d-matrix-2.md,3\f\3ff603e5f629d230b4447fcc22ace4e240c24474
