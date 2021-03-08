@@ -14,7 +14,7 @@ tags:
 ## Problem Description
 
 Problem definition is taken from leetcode. 
-- [Subsets](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/ "Go to leetcode"){:target="_blank" rel="noopener"}
+- [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/ "Go to leetcode"){:target="_blank" rel="noopener"}
 
 > Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
 > Do not allocate extra space for another array; you must do this by modifying the input array in-place with O(1) extra memory.
